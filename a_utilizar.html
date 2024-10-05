@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Carros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+
+    header {
+        background: #333;
+        color: #fff;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        list-style-type: none;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    section {
+        margin-bottom: 40px;
+    }
+
+    .produto {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .produto img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #218838;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        /* Cor de fundo leve para contraste */
+    }
+
+    header {
+        background: #003554;
+        /* Cor do cabeçalho */
+        color: #fff;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        list-style-type: none;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: #00a6fb;
+        /* Cor dos links */
+        text-decoration: none;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    section {
+        margin-bottom: 40px;
+    }
+
+    .produto {
+        border: 1px solid #006494;
+        /* Borda dos produtos */
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+        background-color: #fff;
+        /* Fundo branco para os cards dos produtos */
+    }
+
+    .produto img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    button {
+        background-color: #0582ca;
+        /* Cor do botão */
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #00a6fb;
+        /* Cor do botão ao passar o mouse */
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #051923;
+        /* Cor do rodapé */
+        color: white;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+        <h1>Leôncio's Car</h1>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Bem-vindo ao Leôncio's Car</h2>
+            <p>Encontre os melhores carros com os melhores preços!</p>
+        </section>
+
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <div class="produto">
+                <img src="https://4.bp.blogspot.com/-JUUb_83K5MI/WQd__ov941I/AAAAAAAATLI/y9SMKfWQhqgGx1CQaj8RjbpxQs40Az11gCLcB/s1600/Leil%25C3%25A3o%2Bde%2Bcarro%2Besportivo%2Bchega%2Baos%2Binacredit%25C3%25A1veis%2B3%2Bbilh%25C3%25B5es%2Bde%2Bdol%25C3%25A1res.jpg"
+                    alt="Carro 1">
+                <h3>BMW G4</h3>
+                <p>Preço: R$ 476.000</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="https://2.bp.blogspot.com/_MGiZcWxFpoc/SZCZP3lcWoI/AAAAAAAAMUo/M5ynxbXR3p0/s800/fusca.jpg"
+                    alt="Carro 2">
+                <h3>Fusca modificado</h3>
+                <p>Preço: R$ 60.000</p>
+                <button>Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="https://wallpapercave.com/wp/wp1910667.jpg" alt="Carro 1">
+
+                <h3>Chevrolet opala</h3>
+                <p>Preço: R$ 100.000</p>
+                <button>Comprar</button>
+            </div>
+            <!--  add de mais opções abaixo  -->
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>A Leôncio's Car é uma plataforma dedicada à venda de carros novos e usados, oferecendo qualidade e
+                confiança
+                aos nossos clientes.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AutoMarket. Todos os direitos reservados.</p>
+    </footer>
+
+
+</body>
+
+</html>

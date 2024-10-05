@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ícone do WhatsApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #6c6c6c;
+}
+
+.whatsapp-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.whatsapp-logo {
+    background-color: #25D366; /* Cor verde do WhatsApp */
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Formato circular */
+    position: relative;
+}
+
+.whatsapp-logo::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px; /* Largura do símbolo */
+    height: 30px; /* Altura do símbolo */
+    background-color: white; /* Cor branca para o símbolo */
+    border-radius: 50%; /* Formato circular do símbolo */
+    transform: translate(-50%, -50%);
+}
+
+.whatsapp-logo::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%; /* Ajuste para o símbolo */
+    height: 60%; /* Ajuste para o símbolo */
+    background-color: transparent; 
+    border-radius: 50%;
+}
+
+.whatsapp-logo::after {
+    border-left: 5px solid #25D366; /* Cor do contorno */
+}
+</style>
+
+<body>
+    <div class="whatsapp-icon">
+        <a href="https://wa.me/5511999999999" target="_blank">
+            <div class="whatsapp-logo"></div>
+        </a>
+    </div>
+</body>
+</html>
